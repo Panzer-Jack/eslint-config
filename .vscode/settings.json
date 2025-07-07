@@ -41,6 +41,9 @@
     "xml"
   ],
 
+  "eslint.format.enable": true,
+  "eslint.enable": true,
+
   "pair-diff.patterns": [
     {
       "source": "./fixtures/output/**/*.*",
