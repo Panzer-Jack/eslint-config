@@ -35,6 +35,7 @@ import {
 } from './configs'
 import { formatters } from './configs/formatters'
 import { regexp } from './configs/regexp'
+import { defaultOption } from './default'
 import { interopDefault, isInEditorEnv } from './utils'
 
 const flatConfigProps = [
@@ -79,7 +80,7 @@ export const defaultPluginRenaming = {
  *  The merged ESLint configurations.
  */
 export function antfu(
-  options: OptionsConfig & Omit<TypedFlatConfigItem, 'files'> = {},
+  options: OptionsConfig & Omit<TypedFlatConfigItem, 'files'> = { ...defaultOption },
   ...userConfigs: Awaitable<TypedFlatConfigItem | TypedFlatConfigItem[] | FlatConfigComposer<any, any> | Linter.Config[]>[]
 ): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
   const {
@@ -94,7 +95,7 @@ export function antfu(
     regexp: enableRegexp = true,
     solid: enableSolid = false,
     svelte: enableSvelte = false,
-    typescript: enableTypeScript = isPackageExists('typescript'),
+    typescript: enableTypeScript = true,
     unicorn: enableUnicorn = true,
     unocss: enableUnoCSS = false,
     vue: enableVue = VuePackages.some(i => isPackageExists(i)),
@@ -104,7 +105,7 @@ export function antfu(
   if (isInEditor == null) {
     isInEditor = isInEditorEnv()
     if (isInEditor)
-      // eslint-disable-next-line no-console
+
       console.log('[@antfu/eslint-config] Detected running in editor, some rules are disabled.')
   }
 
@@ -125,8 +126,7 @@ export function antfu(
         name: 'antfu/gitignore',
         ...enableGitignore,
       })]))
-    }
-    else {
+    } else {
       configs.push(interopDefault(import('eslint-config-flat-gitignore')).then(r => [r({
         name: 'antfu/gitignore',
         strict: false,

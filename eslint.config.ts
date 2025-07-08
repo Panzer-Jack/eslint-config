@@ -19,7 +19,7 @@ export default antfu(
       quotes: 'single', // 设置使用单引号
       semi: false, // 设置使用分号
     },
-    ignores: ['node_modules', '**/node_modules/**', 'dist', '**/dist/**', 'docs/**', 'src/services/figma/**'],
+    ignores: ['node_modules', '**/node_modules/**', 'dist', '**/dist/**'],
     rules: {
       'ts/no-explicit-any': 'off',
       'no-console': 'off',
