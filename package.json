@@ -1,7 +1,7 @@
 {
   "name": "@panzer-jack/eslint-config",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "packageManager": "pnpm@10.12.4",
   "description": "Panzer-Jack's ESLint config",
   "license": "MIT",
@@ -22,6 +22,9 @@
     "bin",
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "nr gen && tsdown --clean --dts",
     "stub": "tsdown",
