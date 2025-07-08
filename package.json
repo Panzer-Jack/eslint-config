@@ -1,7 +1,7 @@
 {
-  "name": "@panzer-jack/eslint-config",
+  "name": "@panzerjack/eslint-config",
   "type": "module",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "packageManager": "pnpm@10.12.4",
   "description": "Panzer-Jack's ESLint config",
   "author": {
