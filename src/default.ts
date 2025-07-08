@@ -1,6 +1,8 @@
 import type { OptionsConfig, TypedFlatConfigItem } from './types'
 
 export const defaultOption: OptionsConfig & Omit<TypedFlatConfigItem, 'files'> = {
+  formatters: true,
+  pnpm: true,
   rules: {
     '@typescript-eslint/no-empty-object-type': 'off',
     'antfu/top-level-function': 'off', // 关闭顶层函数的检查
@@ -30,4 +32,5 @@ export const defaultOption: OptionsConfig & Omit<TypedFlatConfigItem, 'files'> =
     quotes: 'single', // 设置使用单引号
     semi: false, // 设置使用分号
   },
+  typescript: true,
 }
