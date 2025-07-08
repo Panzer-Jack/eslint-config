@@ -1,4 +1,9 @@
-# @antfu/eslint-config
+# @panzerjack/eslint-config
+```bash
+pnpm i -D eslint @panzerjack/eslint-config
+```
+
+# fork from @antfu/eslint-config
 
 [![npm](https://img.shields.io/npm/v/@antfu/eslint-config?color=444&label=)](https://npmjs.com/package/@antfu/eslint-config) [![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
 
