@@ -35,7 +35,7 @@ import {
 } from './configs'
 import { formatters } from './configs/formatters'
 import { regexp } from './configs/regexp'
-import { defaultOption } from './default'
+import { defaultOption, defaultRules } from './default'
 import { interopDefault, isInEditorEnv } from './utils'
 
 const flatConfigProps = [
@@ -330,6 +330,7 @@ export function antfu(
   composer = composer
     .append(
       ...configs,
+      ...defaultRules as any,
       ...userConfigs as any,
     )
 
