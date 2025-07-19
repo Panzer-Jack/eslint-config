@@ -1,7 +1,7 @@
 {
   "name": "@panzerjack/eslint-config",
   "type": "module",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "packageManager": "pnpm@10.13.1",
   "description": "Panzer-Jack's ESLint config",
   "author": "Panzer-Jack <panzer_jack@panzer-jack.cn> (https://github.com/Panzer-Jack)",
