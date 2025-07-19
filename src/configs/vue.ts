@@ -137,9 +137,16 @@ export async function vue(
         'vue/dot-location': ['error', 'property'],
         'vue/dot-notation': ['error', { allowKeywords: true }],
         'vue/eqeqeq': ['error', 'smart'],
+        'vue/first-attribute-linebreak': ['error', {
+          multiline: 'below',
+          singleline: 'ignore',
+        }],
         'vue/html-indent': ['error', indent],
         'vue/html-quotes': ['error', 'double'],
-        'vue/max-attributes-per-line': 'off',
+        'vue/max-attributes-per-line': ['error', {
+          multiline: 1,
+          singleline: 1,
+        }],
         'vue/multi-word-component-names': 'off',
         'vue/no-dupe-keys': 'off',
         'vue/no-empty-pattern': 'error',

@@ -1,19 +1,17 @@
 {
-  "name": "@antfu/eslint-config",
+  "name": "@panzerjack/eslint-config",
   "type": "module",
-  "version": "4.17.0",
+  "version": "2.0.0",
   "packageManager": "pnpm@10.13.1",
-  "description": "Anthony's ESLint config",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
+  "description": "Panzer-Jack's ESLint config",
+  "author": "Panzer-Jack <panzer_jack@panzer-jack.cn> (https://github.com/Panzer-Jack)",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/eslint-config",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/eslint-config.git"
+    "url": "git+https://github.com/Panzer-Jack/eslint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/eslint-config/issues"
+    "url": "https://github.com/Panzer-Jack/eslint-config/issues"
   },
   "keywords": [
     "eslint-config"

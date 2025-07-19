@@ -43,7 +43,7 @@ export async function pnpm(): Promise<TypedFlatConfigItem[]> {
       },
       rules: {
         'pnpm/yaml-no-duplicate-catalog-item': 'error',
-        'pnpm/yaml-no-unused-catalog-item': 'error',
+        'pnpm/yaml-no-unused-catalog-item': 'off',
       },
     },
   ]

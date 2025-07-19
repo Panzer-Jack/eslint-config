@@ -58,10 +58,11 @@ export async function stylistic(
           : {
               'antfu/curly': 'error',
               'antfu/if-newline': 'error',
-              'antfu/top-level-function': 'error',
+              'antfu/top-level-function': 'off',
             }
         ),
 
+        'style/brace-style': ['error', '1tbs'],
         'style/generator-star-spacing': ['error', { after: true, before: false }],
         'style/yield-star-spacing': ['error', { after: true, before: false }],
 

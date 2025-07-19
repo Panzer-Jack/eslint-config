@@ -104,7 +104,7 @@ export function antfu(
   if (isInEditor == null) {
     isInEditor = isInEditorEnv()
     if (isInEditor)
-      // eslint-disable-next-line no-console
+
       console.log('[@antfu/eslint-config] Detected running in editor, some rules are disabled.')
   }
 
@@ -125,8 +125,7 @@ export function antfu(
         name: 'antfu/gitignore',
         ...enableGitignore,
       })]))
-    }
-    else {
+    } else {
       configs.push(interopDefault(import('eslint-config-flat-gitignore')).then(r => [r({
         name: 'antfu/gitignore',
         strict: false,
